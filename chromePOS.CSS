@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* navigation section */
+nav {
+  background-color: rgb(2, 2, 32);
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#stc-1 {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 3vw;
+}
+#stc-2 {
+  position: absolute;
+  left: 20vw;
+}
+
+
+.chrome-img {
+  width: 3vw;
+  color: white;
+}
+.chrome-logo {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  align-items: center;
+  width: auto;
+  font-family: roboto;
+  a {
+    font-size: 2vw;
+  }
+
+  i {
+    font-size: 2.2rem;
+    color: white;
+  }
+}
+
+li:nth-child(1) {
+  color: rgb(126, 228, 236);
+}
+li:nth-child(1)::before {
+  content: " ";
+  width: 1.5vw;
+  background: rgb(126, 228, 236);
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0%;
+  top: 1.8rem;
+  z-index: 100;
+}
+
+.link1:hover::after{
+  content: " ";
+  width: 3vw;
+  background: rgb(126, 228, 236);
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 17.5%;
+  top: 1.8rem;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.link2:hover::after{
+  content: " ";
+  width: 1.5vw;
+  background: rgb(126, 228, 236);
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 40.5%;
+  top: 1.8rem;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.link3:hover::after{
+  content: " ";
+  width: 1.5vw;
+  background: rgb(126, 228, 236);
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 58.5%;
+  top: 1.8rem;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.link4:hover::after{
+  content: " ";
+  width: 1.5vw;
+  background: rgb(126, 228, 236);
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 80.5%;
+  top: 1.8rem;
+transform-origin:bottom left ;
+transition: 1s ease-out;
+
+}
+
+.nav-links,
+li {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-size: 1.4vw;
+  font-family: roboto;
+  width: 40vw;
+
+ 
+}
+#stc-3 {
+  position: absolute;
+  right: 2%;
+  display: flex;
+  column-gap: 2vw;
+  justify-content: center;
+  align-items: center;
+  button {
+    width: 12vw;
+    height: 8vh;
+    border-radius: 25px;
+    border: 1px white solid;
+    background: transparent;
+    color: white;
+    font-size: 1vw;
+    text-transform: capitalize;
+  }
+  span {
+    width: 4vw;
+    font-size: 3vw;
+  }
+}
+.chrome-logo,
+a {
+  color: white;
+  font-size: 2vw;
+}
+
+#sct-two {
+  height: 75vh;
+  background-color: rgb(8, 8, 35);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  .pos-img {
+    transform: rotate(340deg);
+    margin-right: 15rem;
+  }
+}
+/* login-section */
+#sct-two {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8vw;
+  align-items: flex-start;
+
+  .heading {
+    height: 40vh;
+    width: 90%;
+    font-size: 3vw;
+    display: flex;
+
+    justify-content: space-around;
+    font-family: roboto;
+    margin-top: 0;
+    text-transform: capitalize;
+    .small {
+      text-transform: lowercase;
+    }
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+  p {
+    font-size: 1.5vw;
+    color: rgba(177, 177, 177, 0.885);
+    width: 50vw;
+    line-height: 2rem;
+    font-family: roboto;
+    margin-top: -2.5vw;
+    margin-bottom: 5vh;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+    height: auto;
+
+    button {
+      width: 17vw;
+      height: 10vh;
+      border-radius: 30px;
+      border: 1px solid white;
+
+      font-size: 1.3vw;
+      text-transform: capitalize;
+      background: transparent;
+      color: white;
+      span {
+        text-transform: lowercase;
+      }
+    }
+    .login {
+      border: none;
+      background: linear-gradient(
+        90deg,
+        rgba(134, 216, 238, 1) 0%,
+        rgba(130, 216, 244, 0.9934348739495799) 25%,
+        rgba(16, 84, 195, 1) 70%
+      );
+    }
+    .login:hover {
+    background: linear-gradient(90deg, rgba(14,81,190,1) 39%, rgba(41,186,235,0.9934348739495799) 69%, rgba(41,186,235,1) 69%, rgba(134,216,238,1) 86%);
+  }
+  .contact:hover {
+    background-color: white;
+    color: rgb(3, 5, 17);
+    transition: 500ms;
+  }
+}
