@@ -5,10 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: roboto;
+}
+body {
+  overflow-x: hidden;
 }
 /* navigation section */
 nav {
-  background-color: rgb(2, 2, 32);
+  background-color: rgb(10, 10, 36);
   width: 100%;
   height: 20vh;
   display: flex;
@@ -27,7 +31,6 @@ nav {
   position: absolute;
   left: 20vw;
 }
-
 
 .chrome-img {
   width: 3vw;
@@ -49,6 +52,10 @@ nav {
     color: white;
   }
 }
+li:hover {
+  color: rgb(126, 228, 236);
+  transition: 300ms ease-in-out;
+}
 
 li:nth-child(1) {
   color: rgb(126, 228, 236);
@@ -65,7 +72,7 @@ li:nth-child(1)::before {
   z-index: 100;
 }
 
-.link1:hover::after{
+.link1:hover::after {
   content: " ";
   width: 3vw;
   background: rgb(126, 228, 236);
@@ -75,9 +82,9 @@ li:nth-child(1)::before {
   left: 17.5%;
   top: 1.8rem;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 1.25s ease-in;
 }
-.link2:hover::after{
+.link2:hover::after {
   content: " ";
   width: 1.5vw;
   background: rgb(126, 228, 236);
@@ -89,7 +96,7 @@ li:nth-child(1)::before {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.link3:hover::after{
+.link3:hover::after {
   content: " ";
   width: 1.5vw;
   background: rgb(126, 228, 236);
@@ -101,7 +108,7 @@ li:nth-child(1)::before {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.link4:hover::after{
+.link4:hover::after {
   content: " ";
   width: 1.5vw;
   background: rgb(126, 228, 236);
@@ -110,9 +117,8 @@ li:nth-child(1)::before {
   position: absolute;
   left: 80.5%;
   top: 1.8rem;
-transform-origin:bottom left ;
-transition: 1s ease-out;
-
+  transform-origin: bottom left;
+  transition: 3s ease-out;
 }
 
 .nav-links,
@@ -130,8 +136,6 @@ li {
   font-size: 1.4vw;
   font-family: roboto;
   width: 40vw;
-
- 
 }
 #stc-3 {
   position: absolute;
@@ -150,6 +154,13 @@ li {
     font-size: 1vw;
     text-transform: capitalize;
   }
+  span:hover {
+    color: rgb(126, 228, 236);
+  }
+  button:hover {
+    border: solid rgb(126, 228, 236) 1px;
+    color: rgb(126, 228, 236);
+  }
   span {
     width: 4vw;
     font-size: 3vw;
@@ -163,16 +174,23 @@ a {
 
 #sct-two {
   height: 75vh;
-  background-color: rgb(8, 8, 35);
+  background-color: rgb(10, 10, 36);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   color: white;
+  .pos {
+    width: auto;
+    height: auto;
 
-  .pos-img {
-    transform: rotate(340deg);
-    margin-right: 15rem;
+    .pos-img {
+      transform: rotate(340deg);
+      margin-right: 15rem;
+      margin-top: 13vh;
+      width: 35vw;
+      height: 45vh;
+    }
   }
 }
 /* login-section */
@@ -239,11 +257,126 @@ a {
       );
     }
     .login:hover {
-    background: linear-gradient(90deg, rgba(14,81,190,1) 39%, rgba(41,186,235,0.9934348739495799) 69%, rgba(41,186,235,1) 69%, rgba(134,216,238,1) 86%);
+      background: linear-gradient(
+        90deg,
+        rgba(14, 81, 190, 1) 39%,
+        rgba(41, 186, 235, 0.9934348739495799) 69%,
+        rgba(41, 186, 235, 1) 69%,
+        rgba(134, 216, 238, 1) 86%
+      );
+    }
+    .contact:hover {
+      background-color: white;
+      color: rgb(3, 5, 17);
+      transition: 500ms;
+    }
   }
-  .contact:hover {
-    background-color: white;
-    color: rgb(3, 5, 17);
-    transition: 500ms;
+}
+/* about us */
+#stc-three {
+  background-color: rgba(16, 19, 37, 0.977);
+  color: white;
+  height: auto;
+  display: flex;
+
+  #stc-three-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 10vw;
+    padding-top: 20vh;
+    margin-left: 4vw;
+  }
+  .section-A {
+    width: 30%;
+    .explore {
+      i {
+        margin-left: 0.7vw;
+      }
+      span {
+        text-transform: capitalize;
+        color: rgb(126, 228, 236);
+        margin-left: -1rem;
+      }
+      span:hover {
+        color: white;
+        transition: 300ms;
+      }
+    }
+    div {
+      margin-bottom: 2rem;
+      span {
+        font-size: 1.2vw;
+        padding: 1vw;
+        text-transform: uppercase;
+      }
+      h1 {
+        font-size: 3.5vw;
+        word-spacing: 0.8rem;
+        text-transform: capitalize;
+        font-weight: 400;
+      }
+      p {
+        font-size: 1.2vw;
+        word-spacing: 0.1rem;
+        line-height: 5vh;
+        color: rgba(158, 155, 155, 0.832);
+      }
+    }
+  }
+  .section-B {
+    p,
+    h2 {
+      width: 30vw;
+      line-height: 2rem;
+    }
+    h2 {
+      text-transform: capitalize;
+      font-family: roboto;
+      font-weight: 400;
+      margin-bottom: 4vh;
+    }
+    p {
+      font-size: 1.3vw;
+      color: rgba(158, 155, 155, 0.832);
+      span {
+        text-transform: uppercase;
+      }
+    }
+    .expirience {
+      display: flex;
+      flex-direction: row;
+      column-gap: 4vw;
+      margin-top: 5vh;
+      margin-left: -1.5rem;
+
+      .yrs,
+      .clients {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-transform: capitalize;
+        align-items: center;
+        column-gap: 1rem;
+
+        span:nth-child(2) {
+          width: 3rem;
+          width: 50%;
+        }
+        span:nth-child(1) {
+          font-size: 3.2vw;
+          color: rgb(126, 228, 236);
+        }
+        span:nth-child(2) {
+          font-size: 1.2rem;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  /* section three two */
+  #section-three {
+    display: flex;
+    flex: 1 1 30%;
   }
 }
